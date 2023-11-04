@@ -1,0 +1,14 @@
+.bt-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bt-fixed-bottom {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

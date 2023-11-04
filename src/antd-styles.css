@@ -1,0 +1,11 @@
+.adm-search-bar .adm-search-bar-input-box {
+  height: 40px;
+}
+
+.adm-list-default .adm-list-body {
+  background-color: #f5f5f5;
+}
+
+.adm-infinite-scroll span {
+  display: none;
+}

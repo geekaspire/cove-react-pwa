@@ -1,0 +1,60 @@
+.rommmate-card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.rc-details {
+  display: flex;
+  gap: 20px;
+}
+
+.rc-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rc-details h4 {
+  color: var(--black);
+}
+
+.rc-details-place {
+  color: var(--dark-grey);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 11.28px */
+}
+
+.rc-profile {
+  width: 84px;
+  height: 84px;
+  border-radius: 8px;
+}
+
+.rc-details-price {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.rc-details-span {
+  color: var(--cv-bg-main);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.rc-details-nearby {
+  font-size: 10px;
+  color: var(--cv-bg-main);
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  gap: 4px;
+}
+
+.rc-details-dots {
+  position: absolute;
+  right: 14px;
+}

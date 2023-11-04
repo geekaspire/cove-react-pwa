@@ -1,0 +1,15 @@
+.hts-container {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.hts-top {
+  color: var(--black);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 141%; /* 19.74px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
