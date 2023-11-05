@@ -6,6 +6,7 @@ import BottomTabs from "./components/BottomTabs/BottomTabs";
 
 import HomePage from "./pages/HomePage/HomePage";
 import Signup from "./pages/Signup/Signup";
+import VerifyOTP from "./pages/VerifyOTP/VerifyOTP";
 
 import "./App.css";
 
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/verify-otp" element={<VerifyOTP />} />
         </Routes>
       </main>
       <BottomTabs />

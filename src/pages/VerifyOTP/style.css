@@ -1,0 +1,24 @@
+.verify-span {
+  color: var(--black);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+.verify-picture {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.login-hint {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin-bottom: 10px;
+}

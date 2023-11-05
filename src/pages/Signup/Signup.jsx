@@ -46,7 +46,10 @@ const Signup = () => {
       <div className="login-inputs">
         <InputDefault placeholder="Full name" />
         <InputDefault placeholder="Phone number" />
-        <ButtonDefault title="Send code" />
+        <ButtonDefault
+          title="Send code"
+          onClick={() => navigate("/verify-otp")}
+        />
         <p className="login-text">
           Already a Cove user?{" "}
           <span className="login-span" onClick={() => navigate("/login")}>
