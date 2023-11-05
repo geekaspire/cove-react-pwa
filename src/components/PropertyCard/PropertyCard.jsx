@@ -27,7 +27,11 @@ const PropertyCard = () => {
           </p>
           <p className="pc-details-applied">9 Applied | 19 Views</p>
           <p
-            style={{ display: "flex", alignItems: "center" }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
             className="pc-avai"
           >
             <BiSolidCircle

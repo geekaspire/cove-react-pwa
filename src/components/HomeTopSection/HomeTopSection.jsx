@@ -3,11 +3,14 @@ import { Button, SearchBar } from "antd-mobile";
 import { BiUserCircle, BiMenuAltLeft } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDefaultRoommate } from "../../store/reducers/global";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
 const HomeTopSection = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const isRoommateState = useSelector((state) => state.global.isRoommate);
 
   return (
@@ -25,7 +28,7 @@ const HomeTopSection = () => {
           <div>
             <p className="hometopsection-wishing">Good Evening!</p>
           </div>
-          <div className="hts-profile">
+          <div className="hts-profile" onClick={() => navigate("/signup")}>
             <BiUserCircle
               style={{
                 fontSize: 26,

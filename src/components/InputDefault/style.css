@@ -1,0 +1,15 @@
+.input-default {
+  font-size: 16px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  height: 40px;
+  /* padding-left: 20px; */
+}
+
+.input-default input {
+  padding-left: 15px;
+}
+
+.input-default input::placeholder {
+  font-size: 16px;
+}

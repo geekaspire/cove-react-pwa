@@ -1,9 +1,9 @@
 // import React from 'react'
 
 import { BiHeart, BiHomeAlt2, BiMessageRounded, BiPlus } from "react-icons/bi";
+import { BottomNavigation } from "reactjs-bottom-navigation";
 
 import "./style.css";
-import { BottomNavigation } from "reactjs-bottom-navigation";
 
 const BottomTabs = () => {
   const tabs = [
@@ -13,7 +13,7 @@ const BottomTabs = () => {
     { key: "message", icon: <BiMessageRounded style={{ fontSize: 18 }} /> },
   ];
   return (
-    <div style={{ paddingTop: 55 }}>
+    <div>
       <BottomNavigation
         items={tabs}
         selected={0}

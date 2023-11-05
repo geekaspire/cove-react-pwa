@@ -17,7 +17,7 @@ const HomeResultSection = () => {
   return (
     <div className="hts-container">
       <div className="hts-top">
-        <p>Top Roommates</p>
+        <p>Top {currentState ? "Roommates" : "Properties"}</p>
         <BiFilter style={{ fontSize: 28 }} />
       </div>
       {currentState ? (

@@ -2,6 +2,10 @@
   padding: 0 20px;
 }
 
+.cv-mobile-container {
+  padding: 20px 20px 60px 20px;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;

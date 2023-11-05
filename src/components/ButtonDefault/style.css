@@ -1,0 +1,14 @@
+.button-default {
+  background-color: var(--main-color);
+  border: none;
+  height: 40px;
+  padding-top: 8px !important;
+  font-size: 14px;
+  width: 100%;
+}
+
+.button-default span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+}

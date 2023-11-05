@@ -2,8 +2,10 @@
 import { Route, Routes } from "react-router-dom";
 import { BiDownload } from "react-icons/bi";
 
-import HomePage from "./pages/HomePage/HomePage";
 import BottomTabs from "./components/BottomTabs/BottomTabs";
+
+import HomePage from "./pages/HomePage/HomePage";
+import Signup from "./pages/Signup/Signup";
 
 import "./App.css";
 
@@ -35,6 +37,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
       <BottomTabs />

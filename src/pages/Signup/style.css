@@ -1,0 +1,22 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-text {
+  color: var(--black);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.login-span {
+  color: var(--black);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
