@@ -13,7 +13,7 @@ const BottomTabs = () => {
     { key: "message", icon: <BiMessageRounded style={{ fontSize: 18 }} /> },
   ];
   return (
-    <div style={{ paddingTop: 60 }}>
+    <div style={{ paddingTop: 55 }}>
       <BottomNavigation
         items={tabs}
         selected={0}

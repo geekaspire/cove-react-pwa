@@ -30,3 +30,7 @@
 .fab-button:hover {
   background-color: var(--dark-grey); /* Button background color on hover */
 }
+
+.bottom-nav {
+  height: 60px;
+}
