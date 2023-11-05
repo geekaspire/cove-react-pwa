@@ -1,0 +1,38 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import InputDefault from "../../components/InputDefault/InputDefault";
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
+import DropDownDefault from "../../components/DropDownDefault/DropDownDefault";
+import { Genders } from "../../utils/ResuableData";
+
+const SetupProfile = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div
+      className="cv-mobile-container login-container"
+      style={{ gap: 30, marginTop: 120 }}
+    >
+      <div>
+        <h4>
+          <span className="verify-span">Setup your</span> <br />
+          Profile
+        </h4>
+      </div>
+
+      <div className="login-inputs">
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <DropDownDefault items={Genders} title="Gender" />
+          <InputDefault placeholder="OTP" />
+        </div>
+        <ButtonDefault
+          title="Confirm"
+          onClick={() => navigate("/setup-profile")}
+        />
+        <p className="login-hint">Gender is used to filter your roommate.</p>
+      </div>
+    </div>
+  );
+};
+
+export default SetupProfile;

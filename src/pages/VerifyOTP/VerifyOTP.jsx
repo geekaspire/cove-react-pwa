@@ -33,7 +33,7 @@ const VerifyOTP = () => {
         </div>
         <ButtonDefault
           title="Confirm"
-          onClick={() => navigate("/verify-otp")}
+          onClick={() => navigate("/setup-profile")}
         />
         <p className="login-text">
           What a surprise, no OTP?{" "}

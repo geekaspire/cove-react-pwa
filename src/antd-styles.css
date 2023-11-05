@@ -9,3 +9,27 @@
 .adm-infinite-scroll span {
   display: none;
 }
+
+.adm-dropdown-item {
+  justify-content: flex-start;
+}
+
+.adm-dropdown {
+  background-color: #f9f9f9;
+  font-size: 16px;
+  border: 1px solid #cecece;
+  border-radius: 12px;
+  height: 40px;
+}
+
+.adm-dropdown-item .adm-dropdown-item-title-text {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.adm-space.adm-space-block {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 5px 20px;
+}
