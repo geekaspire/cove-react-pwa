@@ -39,11 +39,11 @@ const Signup = () => {
               color: "#999999",
             }}
           >
-            <BiImageAdd style={{ fontSize: 32 }} />
+            <BiImageAdd style={{ fontSize: 40 }} />
           </div>
         </ImageUploader>
       </div>
-      <div>
+      <div className="login-inputs">
         <InputDefault placeholder="Full name" />
         <InputDefault placeholder="Phone number" />
         <ButtonDefault title="Send code" />
