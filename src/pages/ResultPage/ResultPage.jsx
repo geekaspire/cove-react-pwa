@@ -11,9 +11,9 @@ const ResultPage = ({ title, description }) => {
     description =
       "Great job! Your profile setup is complete. Start exploring, and discover cozy connections.";
   }
-  //   setTimeout(function () {
-  //     navigate("/");
-  //   }, 3000);
+  setTimeout(function () {
+    navigate("/");
+  }, 3000);
   return (
     <div
       style={{
