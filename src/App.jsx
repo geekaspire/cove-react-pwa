@@ -11,6 +11,7 @@ import SetupProfile from "./pages/SetupProfile/SetupProfile";
 import ResultPage from "./pages/ResultPage/ResultPage";
 
 import "./App.css";
+import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 
 function App() {
   let deferredPrompt = null;
@@ -44,6 +45,7 @@ function App() {
           <Route path="/verify-otp" element={<VerifyOTP />} />
           <Route path="/setup-profile" element={<SetupProfile />} />
           <Route path="/result/:status" element={<ResultPage />} />
+          <Route path="/roommate/:id" element={<RoommateDetailPage />} />
         </Routes>
       </main>
       <BottomTabs />
