@@ -4,6 +4,7 @@ import InputDefault from "../../components/InputDefault/InputDefault";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 import DropDownDefault from "../../components/DropDownDefault/DropDownDefault";
 import { Genders } from "../../utils/ResuableData";
+import CalendarDefault from "../../components/CalendarDefault/CalendarDefault";
 
 const SetupProfile = () => {
   const navigate = useNavigate();
@@ -22,8 +23,11 @@ const SetupProfile = () => {
 
       <div className="login-inputs">
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <InputDefault placeholder="Email address" />
           <DropDownDefault items={Genders} title="Gender" />
-          <InputDefault placeholder="OTP" />
+          <CalendarDefault />
+          <InputDefault placeholder="Location" />
+          <InputDefault placeholder="Occupancy" />
         </div>
         <ButtonDefault
           title="Confirm"

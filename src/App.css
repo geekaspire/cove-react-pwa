@@ -38,3 +38,22 @@
 .bottom-nav {
   height: 60px;
 }
+
+.adm-calendar-picker-footer-bottom button {
+  background-color: var(--main-color);
+  height: 40px;
+  border: none;
+  padding-top: 8px !important;
+  font-size: 14px;
+  width: 100%;
+}
+
+.adm-calendar-picker-footer-bottom span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.adm-calendar-picker-view-cell-selected {
+  background-color: var(--main-color) !important;
+}

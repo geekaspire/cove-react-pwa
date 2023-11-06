@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import store from "./store/store.js";
 import { Provider } from "react-redux";
+import { ConfigProvider } from "antd-mobile";
+import enUS from "antd-mobile/es/locales/en-US";
 
 import "./index.css";
 import "./antd-styles.css";
@@ -14,7 +16,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
+        <ConfigProvider locale={enUS}>
+          <App />
+        </ConfigProvider>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>
