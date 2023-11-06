@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Signup from "./pages/Signup/Signup";
 import VerifyOTP from "./pages/VerifyOTP/VerifyOTP";
 import SetupProfile from "./pages/SetupProfile/SetupProfile";
+import ResultPage from "./pages/ResultPage/ResultPage";
 
 import "./App.css";
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/verify-otp" element={<VerifyOTP />} />
           <Route path="/setup-profile" element={<SetupProfile />} />
+          <Route path="/result/:status" element={<ResultPage />} />
         </Routes>
       </main>
       <BottomTabs />

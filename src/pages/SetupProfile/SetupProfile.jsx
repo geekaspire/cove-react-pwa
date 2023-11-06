@@ -31,7 +31,7 @@ const SetupProfile = () => {
         </div>
         <ButtonDefault
           title="Confirm"
-          onClick={() => navigate("/setup-profile")}
+          onClick={() => navigate("/result/success")}
         />
         <p className="login-hint">Gender is used to filter your roommate.</p>
       </div>
