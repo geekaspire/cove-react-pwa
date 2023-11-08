@@ -3,12 +3,14 @@ import { Card } from "antd-mobile";
 import { BiDotsVerticalRounded, BiMap, BiSolidCircle } from "react-icons/bi";
 
 import PropertyImage from "../../assets/images/property-image.png";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
 const PropertyCard = () => {
+  const navigate = useNavigate();
   return (
-    <Card className="property-card">
+    <Card className="property-card" onClick={() => navigate("/property/id")}>
       <div>
         <img src={PropertyImage} alt="Property-img" className="pc-profile" />
       </div>
