@@ -7,6 +7,7 @@ import UserImage from "../../assets/images/user-pic-big.png";
 import PropertyImage from "../../assets/images/image 5.png";
 
 import "./style.css";
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 const PropertyDetailPage = () => {
   const navigate = useNavigate();
@@ -99,6 +100,9 @@ const PropertyDetailPage = () => {
               Pet friendly
             </p>
           </div>
+        </div>
+        <div style={{ marginTop: 20 }}>
+          <ButtonDefault title="Send booking request" />
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import UserImage from "../../assets/images/user-pic-big.png";
 
 import "./style.css";
 import { BiCheckDouble } from "react-icons/bi";
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 const RoommateDetailPage = () => {
   const navigate = useNavigate();
@@ -76,6 +77,9 @@ const RoommateDetailPage = () => {
               Owns a pet
             </p>
           </div>
+        </div>
+        <div style={{ marginTop: 20 }}>
+          <ButtonDefault title="Send message request" />
         </div>
       </div>
     </div>
