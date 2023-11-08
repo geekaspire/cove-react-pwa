@@ -43,7 +43,12 @@ const PropertyDetailPage = () => {
       <div className="rd-details">
         <div>
           <h4>1 BHK Flat</h4>
-          <p className="rd-details-age">Rs. 8000 / per month</p>
+          <p className="rd-details-age">
+            <span className="primary-color" style={{ fontWeight: 700 }}>
+              Rs. 8000
+            </span>{" "}
+            / per month
+          </p>
         </div>
         <div className="rd-details-info">
           <div>
