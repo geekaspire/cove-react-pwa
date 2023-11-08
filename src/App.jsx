@@ -51,11 +51,6 @@ function App() {
         </Routes>
       </main>
       <BottomTabs />
-      <div className="floating-button">
-        <button className="fab-button" onClick={installPWA}>
-          <BiDownload />
-        </button>
-      </div>
     </>
   );
 }
