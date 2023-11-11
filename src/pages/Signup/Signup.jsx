@@ -46,6 +46,7 @@ const Signup = () => {
       <div className="login-inputs">
         <InputDefault placeholder="Full name" />
         <InputDefault placeholder="Phone number" />
+        <InputDefault placeholder="Password" type="password" />
         <ButtonDefault
           title="Send code"
           onClick={() => navigate("/verify-otp")}
