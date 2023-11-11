@@ -1,6 +1,5 @@
 // import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { BiDownload } from "react-icons/bi";
 
 import BottomTabs from "./components/BottomTabs/BottomTabs";
 
@@ -9,10 +8,11 @@ import Signup from "./pages/Signup/Signup";
 import VerifyOTP from "./pages/VerifyOTP/VerifyOTP";
 import SetupProfile from "./pages/SetupProfile/SetupProfile";
 import ResultPage from "./pages/ResultPage/ResultPage";
-
-import "./App.css";
+import LoginPage from "./pages/LoginPage/LoginPage";
 import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
+
+import "./App.css";
 
 function App() {
   let deferredPrompt = null;
@@ -43,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/verify-otp" element={<VerifyOTP />} />
           <Route path="/setup-profile" element={<SetupProfile />} />
           <Route path="/result/:status" element={<ResultPage />} />

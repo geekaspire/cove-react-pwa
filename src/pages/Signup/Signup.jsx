@@ -53,7 +53,7 @@ const Signup = () => {
         />
         <p className="login-text">
           Already a Cove user?{" "}
-          <span className="login-span" onClick={() => navigate("/login")}>
+          <span className="login-span alink" onClick={() => navigate("/login")}>
             Sign in
           </span>
         </p>
