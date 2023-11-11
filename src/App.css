@@ -37,6 +37,7 @@
 
 .bottom-nav {
   height: 60px;
+  position: relative;
 }
 
 .adm-calendar-picker-footer-bottom button {
