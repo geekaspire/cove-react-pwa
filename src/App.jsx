@@ -11,6 +11,7 @@ import ResultPage from "./pages/ResultPage/ResultPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 import "./App.css";
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/verify-otp" element={<VerifyOTP />} />
           <Route path="/setup-profile" element={<SetupProfile />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/result/:status" element={<ResultPage />} />
           <Route path="/roommate/:id" element={<RoommateDetailPage />} />
           <Route path="/property/:id" element={<PropertyDetailPage />} />
