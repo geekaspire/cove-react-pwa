@@ -58,3 +58,7 @@
 .adm-calendar-picker-view-cell-selected {
   background-color: var(--main-color) !important;
 }
+
+.primary-color {
+  color: var(--main-color);
+}

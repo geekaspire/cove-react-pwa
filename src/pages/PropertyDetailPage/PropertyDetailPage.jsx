@@ -1,47 +1,70 @@
 import React from "react";
-import { Footer, NavBar } from "antd-mobile";
+import { Footer, NavBar, Swiper } from "antd-mobile";
 import { useNavigate } from "react-router-dom";
+import { BiCheckDouble } from "react-icons/bi";
 
 import UserImage from "../../assets/images/user-pic-big.png";
+import PropertyImage from "../../assets/images/image 5.png";
 
 import "./style.css";
-import { BiCheckDouble } from "react-icons/bi";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
-const RoommateDetailPage = () => {
+const PropertyDetailPage = () => {
   const navigate = useNavigate();
+
+  const items = Array.from({ length: 2 }).map((color, index) => (
+    <Swiper.Item key={index}>
+      <div
+        // className={styles.content}
+        style={{ background: color }}
+        // onClick={() => {
+        //   Toast . show ( ` You clicked on the card ${ index + 1 } ` )
+        // }}
+      >
+        {/* {index + 1} */}
+        <img src={PropertyImage} alt="property-pic" style={{ width: "100%" }} />
+      </div>
+    </Swiper.Item>
+  ));
+
   return (
     <div style={{ backgroundColor: "#fff" }}>
       <div>
+        <Swiper autoplay> {items} </Swiper>
         <NavBar
           style={{ position: "absolute", top: 15 }}
           onBack={() => navigate("/")}
         />
-        <img
+        {/* <img
           src={UserImage}
           alt="user-pic"
           style={{ height: 354, width: "100%" }}
-        />
+        /> */}
       </div>
       <div className="rd-details">
         <div>
-          <h4>Katrina Paul</h4>
-          <p className="rd-details-age">Age: 24 | Gender: Female</p>
+          <h4>1 BHK Flat</h4>
+          <p className="rd-details-age">
+            <span className="primary-color" style={{ fontWeight: 700 }}>
+              Rs. 8000
+            </span>{" "}
+            / per month
+          </p>
         </div>
         <div className="rd-details-info">
           <div>
-            <p className="rd-details-small-title">About me</p>
-            <p className="rd-details-info">Hindu, Job Holder</p>
-            <p className="rd-details-info">Member since May 2022</p>
+            <p className="rd-details-small-title">1.2 km from Gwarko</p>
+            <p className="rd-details-info">Mahalaxmi, Lalitpur</p>
+            <p className="rd-details-info">0 Applied | 19 Views</p>
           </div>
           <div>
-            <p className="rd-details-small-title">Languages</p>
-            <p className="rd-details-info">English, Malayalam</p>
+            <p className="rd-details-small-title">Available</p>
+            <p className="rd-details-info">Owned By: Alok</p>
             <p
               className="rd-details-info"
               style={{ textDecoration: "underline" }}
             >
-              Location: Kerala
+              View on Google Maps
             </p>
           </div>
         </div>
@@ -49,7 +72,7 @@ const RoommateDetailPage = () => {
           <Footer label="Additional Information"> </Footer>
         </div>
         <div>
-          <p className="rd-details-small-title">About me</p>
+          <p className="rd-details-small-title">Description</p>
           <p className="rd-details-info">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -58,32 +81,32 @@ const RoommateDetailPage = () => {
           </p>
         </div>
         <div>
-          <p className="rd-details-small-title">Habits and others</p>
+          <p className="rd-details-small-title">Amenities</p>
           <div className="rd-habits">
             <p className="rd-details-info">
-              <BiCheckDouble style={{ marginRight: 3, color: "green" }} />
-              Social Smoker
+              <BiCheckDouble style={{ marginRight: 3, color: "green" }} />2
+              Bathroom
             </p>
             <p className="rd-details-info">
               <BiCheckDouble style={{ marginRight: 3, color: "green" }} />
-              Social Drinker
+              Bikes and Car Parking
             </p>
             <p className="rd-details-info">
               <BiCheckDouble style={{ marginRight: 3, color: "green" }} />
-              Partyholic
+              24/7 Water facility
             </p>
             <p className="rd-details-info">
               <BiCheckDouble style={{ marginRight: 3, color: "green" }} />
-              Owns a pet
+              Pet friendly
             </p>
           </div>
         </div>
         <div style={{ marginTop: 20 }}>
-          <ButtonDefault title="Send message request" />
+          <ButtonDefault title="Send booking request" />
         </div>
       </div>
     </div>
   );
 };
 
-export default RoommateDetailPage;
+export default PropertyDetailPage;

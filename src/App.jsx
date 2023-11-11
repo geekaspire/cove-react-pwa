@@ -12,6 +12,7 @@ import ResultPage from "./pages/ResultPage/ResultPage";
 
 import "./App.css";
 import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
+import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
 
 function App() {
   let deferredPrompt = null;
@@ -46,14 +47,10 @@ function App() {
           <Route path="/setup-profile" element={<SetupProfile />} />
           <Route path="/result/:status" element={<ResultPage />} />
           <Route path="/roommate/:id" element={<RoommateDetailPage />} />
+          <Route path="/property/:id" element={<PropertyDetailPage />} />
         </Routes>
       </main>
       <BottomTabs />
-      <div className="floating-button">
-        <button className="fab-button" onClick={installPWA}>
-          <BiDownload />
-        </button>
-      </div>
     </>
   );
 }
