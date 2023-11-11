@@ -37,7 +37,8 @@
 
 .bottom-nav {
   height: 60px;
-  position: relative;
+  width: 32rem;
+  right: auto;
 }
 
 .adm-calendar-picker-footer-bottom button {
@@ -57,8 +58,4 @@
 
 .adm-calendar-picker-view-cell-selected {
   background-color: var(--main-color) !important;
-}
-
-.primary-color {
-  color: var(--main-color);
 }

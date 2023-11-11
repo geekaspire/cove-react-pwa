@@ -49,8 +49,8 @@ function App() {
           <Route path="/roommate/:id" element={<RoommateDetailPage />} />
           <Route path="/property/:id" element={<PropertyDetailPage />} />
         </Routes>
+        <BottomTabs />
       </main>
-      <BottomTabs />
     </>
   );
 }
