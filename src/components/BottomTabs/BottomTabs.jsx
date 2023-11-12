@@ -54,7 +54,7 @@ const BottomTabs = () => {
       icon: <BiHeart style={{ fontSize: 18 }} onClick={() => goTO("saved")} />,
     },
     {
-      key: "add",
+      key: "listing",
       icon: <BiPlus style={{ fontSize: 22 }} onClick={() => goTO("listing")} />,
     },
     {

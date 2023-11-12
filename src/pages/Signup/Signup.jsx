@@ -8,6 +8,8 @@ import InputDefault from "../../components/InputDefault/InputDefault";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 import "./style.css";
+import SelectorChipsDefault from "../../components/SelectorChipsDefault/SelectorChipsDefault";
+import { UserTypes } from "../../utils/ResuableData";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -47,6 +49,19 @@ const Signup = () => {
         <InputDefault placeholder="Full name" />
         <InputDefault placeholder="Phone number" />
         <InputDefault placeholder="Password" type="password" />
+        <div>
+          <p
+            style={{
+              color: "#666",
+              fontWeight: 500,
+              marginBottom: 6,
+              fontSize: 14,
+            }}
+          >
+            What are you looking for?
+          </p>
+          <SelectorChipsDefault options={UserTypes} />
+        </div>
         <ButtonDefault
           title="Send code"
           onClick={() => navigate("/verify-otp")}
