@@ -1,0 +1,24 @@
+.sd-logo {
+  width: 150px;
+}
+
+.sd-container li {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.sd-items {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sd-items span {
+  padding-top: 1.6px;
+  font-size: 17px;
+}
+
+.sd-items:hover {
+  color: var(--main-color);
+}

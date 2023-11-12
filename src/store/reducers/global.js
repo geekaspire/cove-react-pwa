@@ -6,6 +6,7 @@ export const globalReducer = createSlice({
     value: 0,
     searchFilterModal: false,
     isRoommate: true,
+    isOpenSidebar: false,
   },
   reducers: {
     increment: (state) => {
@@ -14,14 +15,14 @@ export const globalReducer = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    },
     toggleSearchFilter: (state) => {
       state.searchFilterModal = !state.searchFilterModal;
     },
     toggleDefaultRoommate: (state, action) => {
       state.isRoommate = action.payload;
+    },
+    toggleSideBar: (state, action) => {
+      state.isOpenSidebar = action.payload;
     },
   },
 });
@@ -30,9 +31,9 @@ export const globalReducer = createSlice({
 export const {
   increment,
   decrement,
-  incrementByAmount,
   toggleSearchFilter,
   toggleDefaultRoommate,
+  toggleSideBar,
 } = globalReducer.actions;
 
 export default globalReducer.reducer;

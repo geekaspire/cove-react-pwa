@@ -14,6 +14,7 @@ import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 import "./App.css";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
 
 function App() {
   let deferredPrompt = null;
@@ -54,6 +55,8 @@ function App() {
         </Routes>
         <BottomTabs />
       </main>
+
+      <SideDrawer />
     </>
   );
 }

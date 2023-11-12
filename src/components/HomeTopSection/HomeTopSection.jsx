@@ -2,7 +2,10 @@
 import { Button, SearchBar } from "antd-mobile";
 import { BiUserCircle, BiMenuAltLeft } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDefaultRoommate } from "../../store/reducers/global";
+import {
+  toggleDefaultRoommate,
+  toggleSideBar,
+} from "../../store/reducers/global";
 import { useNavigate } from "react-router-dom";
 
 import "./style.css";
@@ -23,6 +26,7 @@ const HomeTopSection = () => {
                 fontSize: 26,
                 color: "#f5f5f5",
               }}
+              onClick={() => dispatch(toggleSideBar(true))}
             />
           </div>
           <div>
