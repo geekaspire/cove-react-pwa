@@ -1,7 +1,7 @@
 import { Selector } from "antd-mobile";
 import React from "react";
 
-const SelectorChipsDefault = ({ options }) => {
+const SelectorChipsDefault = ({ options, onChange }) => {
   return (
     <Selector
       style={{
@@ -13,6 +13,7 @@ const SelectorChipsDefault = ({ options }) => {
       showCheckMark={false}
       options={options}
       defaultValue={["1"]}
+      onChange={onChange}
     />
   );
 };

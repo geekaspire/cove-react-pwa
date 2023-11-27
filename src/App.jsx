@@ -18,28 +18,6 @@ import ListingPage from "./pages/ListingPage/ListingPage";
 import "./App.css";
 
 function App() {
-  let deferredPrompt = null;
-  const installPWA = () => {
-    if ("serviceWorker" in navigator && "serviceWorker" in window) {
-      window.addEventListener("beforeinstallprompt", (event) => {
-        // Prevent the default installation prompt
-        event.preventDefault();
-        deferredPrompt = event;
-
-        // Show a custom install prompt
-        if (window.confirm("Install this app?")) {
-          deferredPrompt.prompt();
-          deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === "accepted") {
-              console.log("PWA installed");
-            }
-            deferredPrompt = null;
-          });
-        }
-      });
-    }
-  };
-
   return (
     <>
       <main>
